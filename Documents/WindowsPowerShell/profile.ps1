@@ -4,7 +4,7 @@ Import-Module PSFzf  # command line fzf
 
 # vi mode
 Set-PSReadLineOption -EditMode vi
-Set-PSReadlineKeyHandler -Chord Ctrl+[ -Function ViCommandMode  
+Set-PSReadlineKeyHandler -Chord Ctrl+"{" -Function ViCommandMode  
 Set-PSReadLineOption -ViModeIndicator Prompt  # Change cursor for vi mode
 Set-PSReadLineOption -PredictionSource History  # Fish-like autocomplete
 
