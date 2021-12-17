@@ -9,8 +9,8 @@ if has("clipboard")
     nnoremap y  "+y
     vnoremap y  "+y
     nnoremap yy "+yy
-    nnoremap Y  "+Y
-    vnoremap Y  "+Y
+    nnoremap Y  "+y$
+    vnoremap Y  "+y$
 
     nnoremap d  "+d
     vnoremap d  "+d
