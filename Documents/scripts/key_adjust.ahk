@@ -12,20 +12,20 @@ Return
         Send {Blind}{Ctrl Up}
 Return
 
-; Hold semicolon as a chord for vim-like navigation
-*;::Input, Key, VL1
-*; Up::
+; Press LAlt for backspace, hold LAlt as a chord for vim-like navigation
+*LAlt::Input, Key, VL1
+*LAlt Up::
 Input
 Key := StrLen(Key)
-IF A_PriorHotKey = *;
+IF A_PriorHotKey = *LAlt
 {
 	SendInput, {Left %Key%}
-	SendInput, {Blind};
+	SendInput, {Blind}{BS}
 	SendInput, {Right %Key%}
 }
 Key =
 Return
-#If GetKeyState(";","P")
+#If GetKeyState("LAlt","P")
 h::left
 j::down
 k::up
