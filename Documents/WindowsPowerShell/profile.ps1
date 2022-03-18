@@ -42,11 +42,6 @@ Function r {radian --no-history}
 Function fzo {Invoke-Item $(fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')}
 Function fze {nvim $(fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')}
 
-#region conda initialize
-# !! Contents within this block are managed by 'conda init' !!
-(& "$HOME\Anaconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
-#endregion
-
 # zoxide
 Invoke-Expression (& {
     $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
