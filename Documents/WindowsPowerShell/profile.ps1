@@ -47,3 +47,9 @@ Invoke-Expression (& {
     $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
     (zoxide init --hook $hook powershell) -join "`n"
 })
+
+#region conda initialize
+# !! Contents within this block are managed by 'conda init' !!
+(& "C:\Users\vfaner\scoop\apps\miniconda3\current\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
+#endregion
+
