@@ -42,6 +42,7 @@ Function .. {Set-Location ..}
 Function r {radian --no-history}
 Function fzo {Invoke-Item $(fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')}
 Function fze {nvim $(fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')}
+Function vd {python -m visidata}
 
 # zoxide
 Invoke-Expression (& {
