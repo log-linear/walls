@@ -18,6 +18,7 @@ $env:FZF_DEFAULT_COMMAND = 'fd -HI --type f'
 $env:FZF_DEFAULT_OPTS = "--bind=ctrl-d:half-page-down,ctrl-u:half-page-up --reverse"
 $env:FZF_CTRL_T_COMMAND = 'fd -HI --type f'
 $env:FZF_ALT_C_COMMAND = 'fd -HI --type d'
+$env:home = $env:userprofile  # Ensure $HOME is set correctly
 
 # Aliases
 Set-Alias -Name v -Value nvim
