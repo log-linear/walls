@@ -44,3 +44,4 @@ Return
         Send {Blind}{Ctrl Up}
 Return
 
+*Rctrl::CapsLock
