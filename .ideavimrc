@@ -1,0 +1,32 @@
+" Config files for IntelliJ's IdeaVim plugin
+
+" Plugins
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
+" General settings
+set softtabstop=4  " tabs to spaces
+set scrolloff=5
+set showmode
+set expandtab  " Tabs are space
+set number relativenumber  " relative line numbers
+set cursorline  " Cursor line highlight
+set showcmd  " show command
+filetype indent on  " filetype detection
+set incsearch
+set showmatch
+set hlsearch
+set smartcase
+set nowrap
+set clipboard+=unnamedplus
+
+" Maps
+nn <esc> :noh<CR>
+nn <C-[> :noh<CR>
+nmap Y y$
+ino ;B <esc>0D80A=<esc>0:execute "normal! 0r" . &commentstring[0]<cr>o<bs>
+ino ;b <esc>0D80A-<esc>0:execute "normal! 0r" . &commentstring[0]<cr>o<bs>
+ino ;H <esc>2hv0r=A<space><esc>40A=<esc>d80<bar>0:execute "normal! 0r" . &commentstring[0]<cr><esc>o<bs>
+ino ;h <esc>2hv0r-A<space><esc>40A-<esc>d80<bar>0:execute "normal! 0r" . &commentstring[0]<cr><esc>o<bs>
+nn Q <Nop>
+
