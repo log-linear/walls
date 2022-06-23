@@ -26,8 +26,8 @@
         Space::BS
         n::Tab
         p::+Tab
-        m::return
-        o::return
+        m::enter
+        o::enter
     #If
 
 ; Capslock to Esc on tap, Ctrl on press
