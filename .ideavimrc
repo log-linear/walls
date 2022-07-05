@@ -3,6 +3,7 @@
 " Plugins
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug  'vim-highlightedyank'
 
 " General settings
 set softtabstop=4  " tabs to spaces
@@ -28,5 +29,4 @@ ino ;B <esc>0D80A=<esc>0:execute "normal! 0r" . &commentstring[0]<cr>o<bs>
 ino ;b <esc>0D80A-<esc>0:execute "normal! 0r" . &commentstring[0]<cr>o<bs>
 ino ;H <esc>2hv0r=A<space><esc>40A=<esc>d80<bar>0:execute "normal! 0r" . &commentstring[0]<cr><esc>o<bs>
 ino ;h <esc>2hv0r-A<space><esc>40A-<esc>d80<bar>0:execute "normal! 0r" . &commentstring[0]<cr><esc>o<bs>
-nn Q <Nop>
 
